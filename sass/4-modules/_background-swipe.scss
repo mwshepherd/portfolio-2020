@@ -1,0 +1,15 @@
+.background-swipe {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 60%;
+  min-height: 100vh;
+  height: 100%;
+  background: var(--color-white);
+  transition: 0.6s;
+  animation-name: bg-left;
+  animation-duration: 1.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}

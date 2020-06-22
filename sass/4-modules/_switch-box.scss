@@ -1,0 +1,49 @@
+.switch-box {
+  display: none;
+}
+
+.switch-box:checked ~ .app {
+  --color-black: #e8e8dc;
+  --color-white: #212121;
+  --color-highlight: #fa8072;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  border-radius: 34px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    left: 2px;
+    bottom: 1px;
+    background-color: var(--color-black);
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
+.switch-box:checked + .app > .navigation > .header > .header__switch > .theme-switch > .switch-slider::before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}

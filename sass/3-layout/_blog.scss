@@ -1,0 +1,107 @@
+.blog {
+  &__posts-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 12vw);
+    grid-auto-rows: 12vw;
+
+    @include breakpoint(desktop) {
+      grid-template-columns: repeat(auto-fill, 12vw);
+      grid-auto-rows: 12vw;
+    }
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(4, 20vw);
+      grid-auto-rows: 20vw;
+    }
+
+    @include breakpoint(phone-lg) {
+      grid-template-columns: repeat(2, 40vw);
+      grid-auto-rows: 40vw;
+    }
+
+    & :first-child {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+
+    & :first-child .blog__posts-details {
+      font-size: 15px;
+    }
+  }
+
+  &__posts-thumbnail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #e8e8dc;
+
+    &:hover .blog__posts-sudo {
+      opacity: 0.5;
+    }
+
+    &:hover .blog__posts-details {
+      opacity: 1;
+    }
+  }
+
+  &__posts-sudo {
+    position: absolute;
+    background-color: var(--color-black);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s;
+  }
+
+  &__img-flex {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s;
+  }
+
+  &__posts-details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    transition: opacity 0.4s;
+  }
+
+  &__posts-title {
+    font-weight: bold;
+  }
+
+  &__posts-date {
+    font-size: 8px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+
+    &-controls {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    &-prev a {
+      color: gray;
+    }
+  }
+}
+
+.blog-posts {
+  min-height: 100vh;
+  padding: 120px 0 60px;
+}

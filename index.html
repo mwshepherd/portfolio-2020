@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Shepherd - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- Page transition background swipe -->
+    <div class="background-swipe"></div>
+    <!-- Hidden checkbox to toggle dark/light switch -->
+    <input type="checkbox" class="switch-box" id="theme-switch-box">
+    <div class="app">
+        <div class="navigation">
+            <!-- Nav Button Component -->
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__button" id="nav-btn">
+                <span class="navigation__icon">
+                    <div class="navigation__line line1"></div>
+                    <div class="navigation__line line2"></div>
+                    <div class="navigation__line line3"></div>
+                </span>
+            </label>
+            <div class="navigation__background"></div>
+
+            <!-- Main Navigation Component -->
+            <nav class="navigation__main">
+                <div class="navigation__links">
+                    <ul class="navigation__menu" id="nav-ul">
+                        <li class="navigation__item"><a href="#home">Home</a></li>
+                        <li class="navigation__item"><a href="#featured-work">Portfolio</a></li>
+                        <li class="navigation__item"><a href="#about">About</a></li>
+                        <li class="navigation__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__contact-details">
+                    <div class="work-together">Want to work together?</div>
+                    <div class="email">michaelshepherd.dev@gmail.com</div>
+                </div>
+                <div class="navigation__block"></div>
+            </nav>
+
+            <!-- Dynamic Borders Component -->
+            <div class="borders">
+                <!-- <div class="top"></div>
+                <div class="bottom"></div> -->
+                <div class="left-sudo"></div>
+            </div>
+
+            <!-- Header Component -->
+            <header class="header">
+                <div class="header__site-logo">
+                    <a href="/" class="header__name">michaelshepherd.</a>
+                    <span class="title">Fullstack Developer</span>
+                </div>
+                <!-- Dark/Light Mode Component -->
+                <div class="header__switch">
+                    <label for="theme-switch-box" class="theme-switch">
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+                <!-- Social Links Component -->
+                <ul class="header__socials">
+                    <li class="header__social-link social-one">
+                        <a href="https://www.linkedin.com/in/michaelshepherd-dev/" aria-label="LinkedIn"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="header__social-link social-two">
+                        <a href="https://github.com/mwshepherd" aria-label="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="header__social-link social-three">
+                        <a href="https://codepen.io/michaelshepherd" aria-label="CodePen" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__bottom-border"></div>
+            </header>
+        </div>
+
+        <!-- Main app content component -->
+        <main class="app-container">
+            <section class="intro" id="home">
+                <div class="intro__blurb">
+                    <h1 class="page-title">Hi, I'm Michael.</h1>
+                </div>
+            </section>
+
+            <section class="featured-work" id="featured-work">
+                <h2>Featured Work</h2>
+                <ul class="featured-work__list">
+                    <li class="featured-work__list-item">
+                        <div class="featured-work__num">01</div>
+                        <div class="featured-work__work-item one">
+                            <a href="#" class="featured-work__work-link one">Fender</a>
+                        </div>
+                        <div class="preview-window work-one"></div>
+                    </li>
+                    <li class="featured-work__list-item">
+                        <div class="featured-work__num">02</div>
+                        <div class="featured-work__work-item two">Countdown Timer</div>
+                        <div class="preview-window work-two"></div>
+                    </li>
+                    <li class="featured-work__list-item">
+                        <div class="featured-work__num">03</div>
+                        <div class="featured-work__work-item three">Guitar Lessons Neukölln</div>
+                        <div class="preview-window work-three"></div>
+                    </li>
+                    <li class="featured-work__list-item">
+                        <div class="featured-work__num">04</div>
+                        <div class="featured-work__work-item four">Mama Kalo</div>
+                        <div class="preview-window work-four"></div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="intro" id="about">
+                <div class="about">
+                    <div class="intro__blurb about__title">
+                        <h1 class="page-title">About.</h1>
+                    </div>
+                    <div class="about__body">
+                        <h2>Hi, I'm Michael</h2>
+                        <p class="about__bio">I love making beautiful and responsive websites. Starting from an empty
+                            document to a finished functioning website, I love seeing the process of hard work. After
+                            working professionally as a musician for the last 10 years, I have discovered a new passion
+                            and creativity within software development. I am a self taught developer with a
+                            passion for learning, problem solving and developing new skills.</p>
+                        <div class="about__skills">
+                            <h3>Skills</h3>
+                            <div class="about__skills-grid">
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">HTML</div>
+                                    <div class="about__skill-item-level html"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">CSS</div>
+                                    <div class="about__skill-item-level css"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">JavaScript</div>
+                                    <div class="about__skill-item-level js"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">React</div>
+                                    <div class="about__skill-item-level react"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">NodeJS</div>
+                                    <div class="about__skill-item-level node"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">Ruby</div>
+                                    <div class="about__skill-item-level ruby"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">Rails</div>
+                                    <div class="about__skill-item-level rails"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">MongoDB</div>
+                                    <div class="about__skill-item-level mongo"></div>
+                                </div>
+                                <div class="about__skill-item">
+                                    <div class="about__skill-item-name">Git</div>
+                                    <div class="about__skill-item-level git"></div>
+                                </div>
+                            </div>
+                            <div class="about__cv-btn">
+                                <a href="./michael-shepherd-cv.pdf" target="_blank">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="intro" id="contact">
+                <div class="contact">
+                    <div class="intro__blurb">
+                        <h1 class="page-title">Contact.</h1>
+                    </div>
+                    <div class="contact__container">
+                        <div class="contact__details">
+                            <div class="contact__details-work-together">
+                                Want to work together?
+                            </div>
+                            <div class="contact__details-email">
+                                michaelshepherd.dev@gmail.com
+                            </div>
+                        </div>
+                        <form class="contact__form">
+                            <input class="contact__input" type="text" name="email" type="email" placeholder="email"
+                                required>
+                            <textarea class="contact__text-area" name="email-body" id="email-body" cols="30"
+                                rows="10"></textarea>
+                            <button class="contact__button">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>

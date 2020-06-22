@@ -1,0 +1,48 @@
+.borders {
+  & > * {
+    position: fixed;
+    z-index: 1;
+    background: var(--color-black);
+    height: 0px;
+    width: 0px;
+    pointer-events: none;
+    transition: all 0.6s;
+    opacity: 0;
+    animation-name: fade-all;
+    animation-duration: 0.4s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .top {
+    top: 0;
+    left: 0;
+    height: 66px;
+    width: 100%;
+
+    @include breakpoint(tablet) {
+      height: 30px;
+    }
+  }
+
+  .bottom {
+    bottom: 0;
+    left: 0;
+    height: 61px;
+    width: 100%;
+
+    @include breakpoint(tablet) {
+      height: 20px;
+    }
+  }
+
+  .left-sudo {
+    background: var(--color-white);
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    transition: 0.3s;
+  }
+}

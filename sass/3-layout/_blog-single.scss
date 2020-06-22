@@ -1,0 +1,74 @@
+.blog {
+  &__single-post {
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    @include breakpoint(tablet) {
+      padding-top: 20%;
+      padding-bottom: 15%;
+    }
+
+    &-nav {
+      font-family: $font-highlight;
+    }
+
+    &-title {
+      font-family: $font-emphasis;
+      font-size: 80px;
+      font-style: italic;
+      line-height: 1.4;
+      letter-spacing: -0.2vw;
+      margin: 40px 0 10px;
+
+      @include breakpoint(laptop) {
+        font-size: 40px;
+        letter-spacing: -0.1vw;
+      }
+
+      @include breakpoint(tablet) {
+        font-size: 34px;
+      }
+    }
+
+    hr {
+      border-bottom: 0;
+      margin-bottom: 20px;
+    }
+
+    &-date {
+      font-size: 12px;
+    }
+
+    &-body {
+      font-family: $font-blog;
+      font-size: 22px;
+      margin-top: 30px;
+
+      @include breakpoint(laptop) {
+        font-size: 15px;
+      }
+    }
+
+    &-feature-img {
+      max-width: 30vw;
+      margin: 0 0 23px 23px;
+      border: 10px solid;
+      float: right;
+
+      @include breakpoint(tablet) {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        border: 4px solid;
+        float: none;
+      }
+    }
+  }
+}
+
+.drop-cap:first-letter {
+  font-size: 80px;
+  float: left;
+  line-height: 65px;
+  margin: 0px 5px 0 0;
+}
