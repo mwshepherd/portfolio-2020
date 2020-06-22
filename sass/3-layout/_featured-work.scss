@@ -71,7 +71,7 @@
     }
 
     &.one:hover ~ .work-one {
-      opacity: 0.5;
+      opacity: 0.6;
     }
 
     &.two:hover ~ .work-two {
@@ -99,28 +99,27 @@
     transition: all 0.6s;
 
     &.work-one {
-      background: url(../images/project1.jpg);
+      background: url(../images/kusunda.png);
       background-size: cover;
       background-position: bottom;
-      backdrop-filter: blur(2px);
     }
 
     &.work-two {
-      background: url(../images/project2.jpg);
+      background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
       background-size: cover;
       background-position: bottom;
     }
 
     &.work-three {
-      background: url(../images/project3.jpg);
+      background: url(../images/project1.jpg);
       background-size: cover;
-      background-position: center;
+      background-position: bottom;
     }
 
     &.work-four {
-      background: url(../images/project4.jpg);
+      background: url(../images/project3.jpg);
       background-size: cover;
-      background-position: bottom;
+      background-position: center;
     }
   }
 }

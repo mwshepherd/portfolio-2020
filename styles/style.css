@@ -134,19 +134,19 @@ section {
     .about__skill-item-level.css::before {
       width: 80%; }
     .about__skill-item-level.js::before {
-      width: 60%; }
+      width: 70%; }
     .about__skill-item-level.react::before {
-      width: 40%; }
+      width: 60%; }
     .about__skill-item-level.node::before {
-      width: 20%; }
-    .about__skill-item-level.ruby::before {
       width: 40%; }
+    .about__skill-item-level.ruby::before {
+      width: 60%; }
     .about__skill-item-level.rails::before {
-      width: 10%; }
+      width: 60%; }
     .about__skill-item-level.mongo::before {
-      width: 80%; }
-    .about__skill-item-level.git::before {
       width: 50%; }
+    .about__skill-item-level.git::before {
+      width: 70%; }
   .about__cv-btn {
     display: inline-block;
     margin-top: 30px;
@@ -390,7 +390,7 @@ section {
         font-size: 20px;
         line-height: 25px; } }
     .featured-work__work-item.one:hover ~ .work-one {
-      opacity: 0.5; }
+      opacity: 0.6; }
     .featured-work__work-item.two:hover ~ .work-two {
       opacity: 0.5; }
     .featured-work__work-item.three:hover ~ .work-three {
@@ -408,22 +408,21 @@ section {
     opacity: 0;
     transition: all 0.6s; }
     .featured-work .preview-window.work-one {
-      background: url(../images/project1.jpg);
+      background: url(../images/kusunda.png);
       background-size: cover;
-      background-position: bottom;
-      backdrop-filter: blur(2px); }
+      background-position: bottom; }
     .featured-work .preview-window.work-two {
-      background: url(../images/project2.jpg);
+      background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
       background-size: cover;
       background-position: bottom; }
     .featured-work .preview-window.work-three {
+      background: url(../images/project1.jpg);
+      background-size: cover;
+      background-position: bottom; }
+    .featured-work .preview-window.work-four {
       background: url(../images/project3.jpg);
       background-size: cover;
       background-position: center; }
-    .featured-work .preview-window.work-four {
-      background: url(../images/project4.jpg);
-      background-size: cover;
-      background-position: bottom; }
 
 .header {
   position: relative;

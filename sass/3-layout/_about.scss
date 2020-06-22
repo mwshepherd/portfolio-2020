@@ -62,31 +62,31 @@
     }
 
     &.js::before {
-      width: 60%;
+      width: 70%;
     }
 
     &.react::before {
-      width: 40%;
+      width: 60%;
     }
 
     &.node::before {
-      width: 20%;
-    }
-
-    &.ruby::before {
       width: 40%;
     }
 
+    &.ruby::before {
+      width: 60%;
+    }
+
     &.rails::before {
-      width: 10%;
+      width: 60%;
     }
 
     &.mongo::before {
-      width: 80%;
+      width: 50%;
     }
 
     &.git::before {
-      width: 50%;
+      width: 70%;
     }
   }
 
