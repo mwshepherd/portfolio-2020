@@ -176,135 +176,6 @@ section {
   .app-container {
     height: 100%; }
 
-.blog__posts-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, 12vw);
-  grid-auto-rows: 12vw; }
-  @media screen and (max-width: 2560px) {
-    .blog__posts-grid {
-      grid-template-columns: repeat(auto-fill, 12vw);
-      grid-auto-rows: 12vw; } }
-  @media screen and (max-width: 768px) {
-    .blog__posts-grid {
-      grid-template-columns: repeat(4, 20vw);
-      grid-auto-rows: 20vw; } }
-  @media screen and (max-width: 425px) {
-    .blog__posts-grid {
-      grid-template-columns: repeat(2, 40vw);
-      grid-auto-rows: 40vw; } }
-  .blog__posts-grid :first-child {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3; }
-  .blog__posts-grid :first-child .blog__posts-details {
-    font-size: 15px; }
-.blog__posts-thumbnail {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: #e8e8dc; }
-  .blog__posts-thumbnail:hover .blog__posts-sudo {
-    opacity: 0.5; }
-  .blog__posts-thumbnail:hover .blog__posts-details {
-    opacity: 1; }
-.blog__posts-sudo {
-  position: absolute;
-  background-color: var(--color-black);
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.4s; }
-.blog__img-flex {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.4s; }
-.blog__posts-details {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 12px;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  padding: 5%;
-  transition: opacity 0.4s; }
-.blog__posts-title {
-  font-weight: bold; }
-.blog__posts-date {
-  font-size: 8px; }
-.blog__pagination {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-top: 10px; }
-  .blog__pagination-controls {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: bold; }
-  .blog__pagination-prev a {
-    color: gray; }
-
-.blog-posts {
-  min-height: 100vh;
-  padding: 120px 0 60px; }
-
-.blog__single-post {
-  padding-top: 10%;
-  padding-bottom: 10%; }
-  @media screen and (max-width: 768px) {
-    .blog__single-post {
-      padding-top: 20%;
-      padding-bottom: 15%; } }
-  .blog__single-post-nav {
-    font-family: "Gordita", sans-serif; }
-  .blog__single-post-title {
-    font-family: "Libre Baskerville", serif;
-    font-size: 80px;
-    font-style: italic;
-    line-height: 1.4;
-    letter-spacing: -0.2vw;
-    margin: 40px 0 10px; }
-    @media screen and (max-width: 1280px) {
-      .blog__single-post-title {
-        font-size: 40px;
-        letter-spacing: -0.1vw; } }
-    @media screen and (max-width: 768px) {
-      .blog__single-post-title {
-        font-size: 34px; } }
-  .blog__single-post hr {
-    border-bottom: 0;
-    margin-bottom: 20px; }
-  .blog__single-post-date {
-    font-size: 12px; }
-  .blog__single-post-body {
-    font-family: Times, serif;
-    font-size: 22px;
-    margin-top: 30px; }
-    @media screen and (max-width: 1280px) {
-      .blog__single-post-body {
-        font-size: 15px; } }
-  .blog__single-post-feature-img {
-    max-width: 30vw;
-    margin: 0 0 23px 23px;
-    border: 10px solid;
-    float: right; }
-    @media screen and (max-width: 768px) {
-      .blog__single-post-feature-img {
-        max-width: 100%;
-        margin: 0;
-        margin-bottom: 20px;
-        border: 4px solid;
-        float: none; } }
-
-.drop-cap:first-letter {
-  font-size: 80px;
-  float: left;
-  line-height: 65px;
-  margin: 0px 5px 0 0; }
-
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -695,6 +566,33 @@ section {
       .navigation__background {
         transition: all 1s ease; } }
 
+.portfolio__landing {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/kusunda.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%; }
+.portfolio__title {
+  font-size: 8vw;
+  text-transform: uppercase;
+  line-height: 75%;
+  margin: 0 -1%; }
+.portfolio__blurb {
+  margin: 20px 0; }
+.portfolio__link {
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s; }
+  .portfolio__link:hover {
+    background-color: var(--color-white);
+    color: var(--color-black); }
+
 .background-swipe {
   position: absolute;
   z-index: 99;
@@ -769,7 +667,7 @@ section {
   right: 0;
   bottom: 0;
   background-color: var(--color-white);
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--color-white);
   border-radius: 34px;
   -webkit-transition: 0.4s;
   transition: 0.4s;

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Shepherd - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+
+<body>
+    <!-- Page transition background swipe -->
+    <!-- <div class="background-swipe"></div> -->
+    <!-- Hidden checkbox to toggle dark/light switch -->
+    <input type="checkbox" class="switch-box" id="theme-switch-box">
+    <div class="app">
+        <div class="navigation">
+            <!-- Nav Button Component -->
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__button" id="nav-btn">
+                <span class="navigation__icon">
+                    <div class="navigation__line line1"></div>
+                    <div class="navigation__line line2"></div>
+                    <div class="navigation__line line3"></div>
+                </span>
+            </label>
+            <div class="navigation__background"></div>
+
+            <!-- Main Navigation Component -->
+            <nav class="navigation__main">
+                <div class="navigation__links">
+                    <ul class="navigation__menu" id="nav-ul">
+                        <li class="navigation__item"><a href="#home">Home</a></li>
+                        <li class="navigation__item"><a href="#featured-work">Portfolio</a></li>
+                        <li class="navigation__item"><a href="#about">About</a></li>
+                        <li class="navigation__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__contact-details">
+                    <div class="work-together">Want to work together?</div>
+                    <div class="email">michaelshepherd.dev@gmail.com</div>
+                </div>
+                <div class="navigation__block"></div>
+            </nav>
+
+            <!-- Dynamic Borders Component -->
+            <div class="borders">
+                <!-- <div class="top"></div>
+                <div class="bottom"></div> -->
+                <div class="left-sudo"></div>
+            </div>
+
+            <!-- Header Component -->
+            <header class="header">
+                <div class="header__site-logo">
+                    <a href="/" class="header__name">michaelshepherd.</a>
+                    <span class="title">Fullstack Developer</span>
+                </div>
+                <!-- Dark/Light Mode Component -->
+                <div class="header__switch">
+                    <label for="theme-switch-box" class="theme-switch">
+                        <span class="switch-slider"></span>
+                    </label>
+                </div>
+                <!-- Social Links Component -->
+                <ul class="header__socials">
+                    <li class="header__social-link social-one">
+                        <a href="https://www.linkedin.com/in/michaelshepherd-dev/" aria-label="LinkedIn"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="header__social-link social-two">
+                        <a href="https://github.com/mwshepherd" aria-label="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="header__social-link social-three">
+                        <a href="https://codepen.io/michaelshepherd" aria-label="CodePen" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <div class="header__bottom-border"></div> -->
+            </header>
+        </div>
+
+        <!-- Main app content component -->
+        <main class="app-container">
+            <div class="portfolio" id="home">
+                <div class="portfolio__landing">
+                    <h1 class="portfolio__title">Speak the Unspoken</h1>
+                    <div class="portfolio__blurb">A simple voice recorder SPA built in React.</div>
+                    <div class="portfolio__links">
+                        <a href="" class="portfolio__link">Live Project</a>
+                        <a href="" class="portfolio__link">GitHub</a>
+                    </div>
+                    <div class="portfolio__technologies">
+                    </div>
+                </div>
+                <section class="portfolio__about">
+                    <h1>About</h1>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/scripts/app.js"></script>
+</body>
+
+</html>
