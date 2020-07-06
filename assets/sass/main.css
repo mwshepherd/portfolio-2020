@@ -566,51 +566,32 @@ section {
       .navigation__background {
         transition: all 1s ease; } }
 
-.portfolio {
-  position: relative; }
-  .portfolio__bg {
-    opacity: 50%;
-    height: 100vh;
-    width: 100%; }
-    .portfolio__bg.speaktheunspoken {
-      background: url("../images/kusunda.png");
-      background-size: cover;
-      background-position: center; }
-    .portfolio__bg.musicshare {
-      background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
-      background-size: cover;
-      background-position: center; }
-  .portfolio__landing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20%; }
-  .portfolio__title {
-    font-size: 8vw;
-    text-transform: uppercase;
-    line-height: 75%;
-    margin: 0 -1%; }
-  .portfolio__blurb {
-    margin: 20px 0; }
-  .portfolio__link {
-    display: inline-block;
-    border: 1px solid var(--color-white);
-    border-radius: 5px;
-    padding: 5px;
-    transition: background-color 0.3s; }
-    .portfolio__link:hover {
-      background-color: var(--color-white);
-      color: var(--color-black); }
-  .portfolio__about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .portfolio__preview img {
-    max-width: 250px; }
+.portfolio__landing {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/kusunda.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%; }
+.portfolio__title {
+  font-size: 8vw;
+  text-transform: uppercase;
+  line-height: 75%;
+  margin: 0 -1%; }
+.portfolio__blurb {
+  margin: 20px 0; }
+.portfolio__link {
+  display: inline-block;
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s; }
+  .portfolio__link:hover {
+    background-color: var(--color-white);
+    color: var(--color-black); }
 
 .background-swipe {
   position: absolute;
@@ -708,4 +689,4 @@ section {
   -ms-transform: translateX(10px);
   transform: translateX(10px); }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
