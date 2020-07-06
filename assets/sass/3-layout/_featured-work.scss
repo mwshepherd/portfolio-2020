@@ -85,6 +85,10 @@
     &.four:hover ~ .work-four {
       opacity: 0.5;
     }
+
+    &.five:hover ~ .work-five {
+      opacity: 0.5;
+    }
   }
 
   .preview-window {
@@ -118,6 +122,12 @@
 
     &.work-four {
       background: url(../images/project3.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &.work-five {
+      background: url(../images/project2.jpg);
       background-size: cover;
       background-position: center;
     }
