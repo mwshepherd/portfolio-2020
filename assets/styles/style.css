@@ -807,6 +807,10 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+.portfolio__tools > * {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
 .portfolio__preview img {
   max-width: 250px;
 }

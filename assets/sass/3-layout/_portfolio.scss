@@ -86,6 +86,13 @@
     justify-content: center;
   }
 
+  &__tools {
+    & > * {
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+  }
+
   &__preview {
     img {
       max-width: 250px;
