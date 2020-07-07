@@ -782,8 +782,18 @@ section {
   color: var(--color-black);
 }
 .portfolio__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.portfolio__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .portfolio__preview img {
   max-width: 250px;
