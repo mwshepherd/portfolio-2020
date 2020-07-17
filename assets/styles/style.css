@@ -757,6 +757,11 @@ section {
   background-size: cover;
   background-position: center;
 }
+.portfolio__bg.fender {
+  background: url("../images/project1.jpg");
+  background-size: cover;
+  background-position: center;
+}
 .portfolio__landing {
   position: absolute;
   top: 0;
