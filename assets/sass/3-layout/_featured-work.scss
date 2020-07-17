@@ -85,6 +85,10 @@
     &.four:hover ~ .work-four {
       opacity: 0.5;
     }
+
+    &.five:hover ~ .work-five {
+      opacity: 0.5;
+    }
   }
 
   .preview-window {
@@ -105,19 +109,31 @@
     }
 
     &.work-two {
-      background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
+      background: url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=2133);
       background-size: cover;
       background-position: bottom;
     }
 
     &.work-three {
-      background: url(../images/project1.jpg);
+      background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
       background-size: cover;
       background-position: bottom;
     }
 
     &.work-four {
-      background: url(../images/project3.jpg);
+      background: url(../images/project1.jpg);
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    // &.work-four {
+    //   background: url(../images/project3.jpg);
+    //   background-size: cover;
+    //   background-position: center;
+    // }
+
+    &.work-five {
+      background: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
       background-size: cover;
       background-position: center;
     }

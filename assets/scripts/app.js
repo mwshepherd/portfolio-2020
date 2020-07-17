@@ -5,6 +5,7 @@ const navBtn = document.querySelector('#nav-btn');
 navUl.addEventListener('click', (e) => {
   if (e.target.localName === 'a') {
     navToggle.checked = false;
+    document.querySelector('html').style.removeProperty('overflow');
   }
 });
 
