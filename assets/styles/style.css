@@ -385,7 +385,7 @@ section {
   background-position: bottom;
 }
 .featured-work .preview-window.work-five {
-  background: url(../images/project2.jpg);
+  background: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
   background-size: cover;
   background-position: center;
 }
@@ -759,6 +759,11 @@ section {
 }
 .portfolio__bg.fender {
   background: url("../images/project1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.portfolio__bg.countdown {
+  background: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
   background-size: cover;
   background-position: center;
 }
