@@ -11,7 +11,7 @@
 
 <body>
     <!-- Page transition background swipe -->
-    <!-- <div class="background-swipe"></div> -->
+    <div class="background-swipe"></div>
     <!-- Hidden checkbox to toggle dark/light switch -->
     <input type="checkbox" class="switch-box" id="theme-switch-box">
     <div class="app">
@@ -55,7 +55,7 @@
             <header class="header">
                 <div class="header__site-logo">
                     <a href="/" class="header__name">michaelshepherd.</a>
-                    <span class="title">Fullstack Developer</span>
+                    <span class="title">Developer</span>
                 </div>
                 <!-- Dark/Light Mode Component -->
                 <div class="header__switch">
@@ -89,20 +89,53 @@
         <!-- Main app content component -->
         <main class="app-container">
             <div class="portfolio" id="home">
-                <div class="portfolio__bg speaktheunspoken"></div>
+                <div class="portfolio__bg fender"></div>
                 <div class="portfolio__landing">
-                    <h1 class="portfolio__title">Speak the Unspoken</h1>
-                    <div class="portfolio__blurb">A simple voice recorder SPA built in React.</div>
+                    <h1 class="portfolio__title">Fender Shop</h1>
+                    <div class="portfolio__blurb">A recreation built in React.</div>
                     <div class="portfolio__links">
-                        <a href="" class="portfolio__link">Live Project</a>
-                        <a href="" class="portfolio__link">GitHub</a>
+                        <a href="https://fender-shop.netlify.app/" target="_blank" class="portfolio__link">Live
+                            Project</a>
+                        <a href="https://github.com/mwshepherd/fendersite-react" target="_blank"
+                            class="portfolio__link">GitHub</a>
                     </div>
                     <div class="portfolio__technologies">
                     </div>
+                    <div class="intro__scroll"><a href="#info">&#8592; Scroll</a></div>
                 </div>
-                <section class="portfolio__about">
-                    <div class="portfolio__preview">
-                        Preview image
+                <section class="portfolio__about" id="info">
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__section">
+                        <div class="portfolio__info">
+                            <h3>Recreating a design.</h3>
+                            I took this project as a means of recreating the online store for guitar brand Fender. This
+                            project serves as more as a demonstration of skill in styling, and creating small CSS and JS
+                            based components, such as the carousel and collapsible menu.
+                        </div>
+                        <img src="../assets/images/fender-landing.jpg" class="portfolio__section-img" />
+                    </div>
+                    <div class="portfolio__section-tools">
+                        <div class="portfolio__info">
+                            <h3>Built using</h3>
+                            <div class="portfolio__tools">
+                                <span class="portfolio__tool">React</span>
+                                <span class="portfolio__tool">JSX</span>
+                                <span class="portfolio__tool">SASS</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="portfolio__section">
+                        <img src="../assets/images/fender-product.jpg" class="portfolio__section-img" />
+                        <div class="portfolio__info">
+                            <h3>SPA</h3>
+                            A first experience of setting up a single page application with React using React Router.
+                        </div>
+                    </div>
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__next">
+                        <div class="portfolio__next-project">Next project</div>
+                        <a href="./countdown.html" class="portfolio__next-name">Countdown Timer</a>
                     </div>
                 </section>
             </div>

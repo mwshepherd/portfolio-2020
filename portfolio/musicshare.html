@@ -11,7 +11,7 @@
 
 <body>
     <!-- Page transition background swipe -->
-    <!-- <div class="background-swipe"></div> -->
+    <div class="background-swipe"></div>
     <!-- Hidden checkbox to toggle dark/light switch -->
     <input type="checkbox" class="switch-box" id="theme-switch-box">
     <div class="app">
@@ -55,7 +55,7 @@
             <header class="header">
                 <div class="header__site-logo">
                     <a href="/" class="header__name">michaelshepherd.</a>
-                    <span class="title">Fullstack Developer</span>
+                    <span class="title">Developer</span>
                 </div>
                 <!-- Dark/Light Mode Component -->
                 <div class="header__switch">
@@ -89,20 +89,57 @@
         <!-- Main app content component -->
         <main class="app-container">
             <div class="portfolio" id="home">
-                <div class="portfolio__bg speaktheunspoken"></div>
+                <div class="portfolio__bg musicshare"></div>
                 <div class="portfolio__landing">
-                    <h1 class="portfolio__title">Speak the Unspoken</h1>
-                    <div class="portfolio__blurb">A simple voice recorder SPA built in React.</div>
+                    <h1 class="portfolio__title">Music Share</h1>
+                    <div class="portfolio__blurb">A two sided marketplace built in Ruby on Rails.</div>
                     <div class="portfolio__links">
-                        <a href="" class="portfolio__link">Live Project</a>
-                        <a href="" class="portfolio__link">GitHub</a>
+                        <a href="https://fathomless-waters-85437.herokuapp.com/" target="_blank"
+                            class="portfolio__link">Live Project</a>
+                        <a href="https://github.com/mwshepherd/musicshare" target="_blank"
+                            class="portfolio__link">GitHub</a>
                     </div>
                     <div class="portfolio__technologies">
                     </div>
+                    <div class="intro__scroll"><a href="#info">&#8592; Scroll</a></div>
                 </div>
-                <section class="portfolio__about">
-                    <div class="portfolio__preview">
-                        Preview image
+                <section class="portfolio__about" id="info">
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__section">
+                        <div class="portfolio__info">
+                            <h3>Building a marketplace application.</h3>
+                            This is a conceptual marketplace project that aims to solve over consumption of musical
+                            equipment and help to offer quality instruments to musicians for short rental periods.
+                        </div>
+                        <img src="../assets/images/music-share.png" class="portfolio__section-img" />
+                    </div>
+                    <div class="portfolio__section-tools">
+                        <div class="portfolio__info">
+                            <h3>Built using</h3>
+                            <div class="portfolio__tools">
+                                <span class="portfolio__tool">Ruby on Rails</span>
+                                <span class="portfolio__tool">PostgreSQL</span>
+                                <span class="portfolio__tool">SASS</span>
+                                <span class="portfolio__tool">Devise</span>
+                                <span class="portfolio__tool">Cancancan</span>
+                                <span class="portfolio__tool">Stripe</span>
+                                <span class="portfolio__tool">AWS</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="portfolio__section">
+                        <img src="../assets/images/music-share_listing.png" class="portfolio__section-img" />
+                        <div class="portfolio__info">
+                            <h3>Functionality.</h3>
+                            Users can sign up, post listings and also purchase listings from other users. A record of
+                            all orders are stored for users to view in their dashboard.
+                        </div>
+                    </div>
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__next">
+                        <div class="portfolio__next-project">Next project</div>
+                        <a href="./fender.html" class="portfolio__next-name">Fender Shop</a>
                     </div>
                 </section>
             </div>

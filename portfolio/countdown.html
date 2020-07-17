@@ -11,7 +11,7 @@
 
 <body>
     <!-- Page transition background swipe -->
-    <!-- <div class="background-swipe"></div> -->
+    <div class="background-swipe"></div>
     <!-- Hidden checkbox to toggle dark/light switch -->
     <input type="checkbox" class="switch-box" id="theme-switch-box">
     <div class="app">
@@ -55,7 +55,7 @@
             <header class="header">
                 <div class="header__site-logo">
                     <a href="/" class="header__name">michaelshepherd.</a>
-                    <span class="title">Fullstack Developer</span>
+                    <span class="title">Developer</span>
                 </div>
                 <!-- Dark/Light Mode Component -->
                 <div class="header__switch">
@@ -89,20 +89,45 @@
         <!-- Main app content component -->
         <main class="app-container">
             <div class="portfolio" id="home">
-                <div class="portfolio__bg speaktheunspoken"></div>
+                <div class="portfolio__bg countdown"></div>
                 <div class="portfolio__landing">
-                    <h1 class="portfolio__title">Speak the Unspoken</h1>
-                    <div class="portfolio__blurb">A simple voice recorder SPA built in React.</div>
+                    <h1 class="portfolio__title">Simple Countdown Timer</h1>
+                    <div class="portfolio__blurb">Built in vanilla JavaScript.</div>
                     <div class="portfolio__links">
-                        <a href="" class="portfolio__link">Live Project</a>
-                        <a href="" class="portfolio__link">GitHub</a>
+                        <a href="https://fender-shop.netlify.app/" target="_blank" class="portfolio__link">Live
+                            Project</a>
+                        <a href="https://github.com/mwshepherd/fendersite-react" target="_blank"
+                            class="portfolio__link">GitHub</a>
                     </div>
                     <div class="portfolio__technologies">
                     </div>
+                    <div class="intro__scroll"><a href="#info">&#8592; Scroll</a></div>
                 </div>
-                <section class="portfolio__about">
-                    <div class="portfolio__preview">
-                        Preview image
+                <section class="portfolio__about" id="info">
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__section">
+                        <div class="portfolio__info">
+                            <h3>A simple tool.</h3>
+                            This countdown alarm timer allows for hours, minutes and seconds. Once reached the time
+                            limit, a notification sound plays.
+                        </div>
+                        <img src="../assets/images/project2.jpg" class="portfolio__section-img" />
+                    </div>
+                    <div class="portfolio__section-tools">
+                        <div class="portfolio__info">
+                            <h3>Built using</h3>
+                            <div class="portfolio__tools">
+                                <span class="portfolio__tool">HTML</span>
+                                <span class="portfolio__tool">CSS</span>
+                                <span class="portfolio__tool">JavaScript</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio__next">
+                        <div class="portfolio__next-project">Get to know me a little better</div>
+                        <a href="../index.html#about" class="portfolio__next-name">About Me</a>
                     </div>
                 </section>
             </div>

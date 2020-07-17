@@ -11,7 +11,7 @@
 
 <body>
     <!-- Page transition background swipe -->
-    <!-- <div class="background-swipe"></div> -->
+    <div class="background-swipe"></div>
     <!-- Hidden checkbox to toggle dark/light switch -->
     <input type="checkbox" class="switch-box" id="theme-switch-box">
     <div class="app">
@@ -55,7 +55,7 @@
             <header class="header">
                 <div class="header__site-logo">
                     <a href="/" class="header__name">michaelshepherd.</a>
-                    <span class="title">Fullstack Developer</span>
+                    <span class="title">Developer</span>
                 </div>
                 <!-- Dark/Light Mode Component -->
                 <div class="header__switch">
@@ -89,20 +89,57 @@
         <!-- Main app content component -->
         <main class="app-container">
             <div class="portfolio" id="home">
-                <div class="portfolio__bg speaktheunspoken"></div>
+                <div class="portfolio__bg seenit"></div>
                 <div class="portfolio__landing">
-                    <h1 class="portfolio__title">Speak the Unspoken</h1>
-                    <div class="portfolio__blurb">A simple voice recorder SPA built in React.</div>
+                    <h1 class="portfolio__title">Seen It</h1>
+                    <div class="portfolio__blurb">A simple digital world map pin board.</div>
                     <div class="portfolio__links">
-                        <a href="" class="portfolio__link">Live Project</a>
-                        <a href="" class="portfolio__link">GitHub</a>
+                        <a href="https://seen-it.netlify.app/" target="_blank" class="portfolio__link">Live Project</a>
+                        <a href="https://github.com/mwshepherd/seenit-backend" target="_blank"
+                            class="portfolio__link">GitHub Backend</a>
+                        <a href="https://github.com/mwshepherd/seenit-client" target="_blank"
+                            class="portfolio__link">GitHub Frontend</a>
                     </div>
                     <div class="portfolio__technologies">
                     </div>
+                    <div class="intro__scroll"><a href="#info">&#8592; Scroll</a></div>
                 </div>
-                <section class="portfolio__about">
-                    <div class="portfolio__preview">
-                        Preview image
+                <section class="portfolio__about" id="info">
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__section">
+                        <div class="portfolio__info">
+                            <h3>A simple pin board for tracking your travel.</h3>
+                            Seen It is a simple tool for logging all your visited countries. The app accesses the REST
+                            countries API for retrieving data on 250 countries. Use a filter search for finding a
+                            country and click it to add to your map.
+                        </div>
+                        <img src="../assets/images/seenit-home.png" class="portfolio__section-img" />
+                    </div>
+                    <div class="portfolio__section-tools">
+                        <div class="portfolio__info">
+                            <h3>Built using</h3>
+                            <div class="portfolio__tools">
+                                <span class="portfolio__tool">React</span>
+                                <span class="portfolio__tool">Ruby on Rails</span>
+                                <span class="portfolio__tool">PostgreSQL</span>
+                                <span class="portfolio__tool">SASS</span>
+                                <span class="portfolio__tool">Knock</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="portfolio__section">
+                        <img src="../assets/images/seenit-dashboard.png" class="portfolio__section-img" />
+                        <div class="portfolio__info">
+                            <h3>Get info on the countries you've visited.</h3>
+                            Once building your list of visited countries, you can click any country on the map and it
+                            will give you stats including population, capital city and language.
+                        </div>
+                    </div>
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__next">
+                        <div class="portfolio__next-project">Next project</div>
+                        <a href="./musicshare.html" class="portfolio__next-name">MusicShare</a>
                     </div>
                 </section>
             </div>
