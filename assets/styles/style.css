@@ -81,7 +81,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   section {
-    padding: 80px 10%;
+    padding: 80px 18%;
   }
 }
 
@@ -100,6 +100,12 @@ section {
   letter-spacing: -0.6vw;
   line-height: 0.5;
   margin-left: -0.89vw;
+}
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 15vw;
+    line-height: 1;
+  }
 }
 
 @font-face {
@@ -295,7 +301,7 @@ section {
 }
 @media screen and (max-width: 950px) {
   .featured-work__list-item {
-    margin: 40px 0;
+    margin: 20px 0;
   }
 }
 .featured-work__num {
@@ -334,8 +340,8 @@ section {
 }
 @media screen and (max-width: 700px) {
   .featured-work__work-item {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 35px;
+    line-height: 36px;
   }
 }
 .featured-work__work-item.one:hover ~ .work-one {
@@ -784,6 +790,12 @@ section {
   line-height: 75%;
   margin: 0 -1%;
 }
+@media screen and (max-width: 700px) {
+  .portfolio__title {
+    font-size: 16vw;
+    word-break: break-all;
+  }
+}
 .portfolio__blurb {
   margin: 20px 0;
 }
@@ -823,7 +835,7 @@ section {
 }
 @media screen and (max-width: 1280px) {
   .portfolio__section-tools {
-    padding: 50px;
+    padding: 30px;
   }
   .portfolio__section-tools h3 {
     font-size: 30px;
@@ -882,6 +894,12 @@ section {
   font-weight: bold;
   line-height: 72px;
   transition: color 0.6s;
+}
+@media screen and (max-width: 700px) {
+  .portfolio__next-name {
+    font-size: 35px;
+    line-height: 27px;
+  }
 }
 .portfolio__next-name:hover {
   color: var(--color-highlight);

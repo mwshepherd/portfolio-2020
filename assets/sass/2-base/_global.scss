@@ -41,7 +41,7 @@ section {
   padding: 66px 20%;
 
   @include breakpoint(tablet) {
-    padding: 80px 10%;
+    padding: 80px 18%;
   }
 }
 
@@ -60,4 +60,9 @@ section {
   letter-spacing: -0.6vw;
   line-height: 0.5;
   margin-left: -0.89vw;
+
+  @include breakpoint(tablet) {
+    font-size: 15vw;
+    line-height: 1;
+  }
 }
