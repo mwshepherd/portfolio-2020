@@ -103,28 +103,34 @@
     transition: all 0.6s;
 
     &.work-one {
-      background: url(https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+      background: url(../images/kusunda.png);
       background-size: cover;
       background-position: center;
     }
 
     &.work-two {
+      background: url(https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &.work-three {
       background: url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=2133);
       background-size: cover;
       background-position: bottom;
     }
 
-    &.work-three {
+    &.work-four {
       background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
       background-size: cover;
       background-position: bottom;
     }
 
-    &.work-four {
-      background: url(../images/project1.jpg);
-      background-size: cover;
-      background-position: bottom;
-    }
+    // &.work-four {
+    //   background: url(../images/project1.jpg);
+    //   background-size: cover;
+    //   background-position: bottom;
+    // }
 
     // &.work-four {
     //   background: url(../images/project3.jpg);
