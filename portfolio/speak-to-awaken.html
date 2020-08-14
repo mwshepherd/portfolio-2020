@@ -11,7 +11,7 @@
 
 <body>
     <!-- Page transition background swipe -->
-    <!-- <div class="background-swipe"></div> -->
+    <div class="background-swipe"></div>
     <!-- Hidden checkbox to toggle dark/light switch -->
     <input type="checkbox" class="switch-box" id="theme-switch-box">
     <div class="app">
@@ -55,7 +55,7 @@
             <header class="header">
                 <div class="header__site-logo">
                     <a href="/" class="header__name">michaelshepherd.</a>
-                    <span class="title">Fullstack Developer</span>
+                    <span class="title">Developer</span>
                 </div>
                 <!-- Dark/Light Mode Component -->
                 <div class="header__switch">
@@ -89,20 +89,63 @@
         <!-- Main app content component -->
         <main class="app-container">
             <div class="portfolio" id="home">
-                <div class="portfolio__bg speaktheunspoken"></div>
+                <div class="portfolio__bg speaktoawaken"></div>
                 <div class="portfolio__landing">
-                    <h1 class="portfolio__title">Speak the Unspoken</h1>
-                    <div class="portfolio__blurb">A simple voice recorder SPA built in React.</div>
+                    <h1 class="portfolio__title">Speak To Awaken</h1>
+                    <div class="portfolio__blurb">A voice recording app as part of a VR series by NowHere Media</div>
                     <div class="portfolio__links">
-                        <a href="" class="portfolio__link">Live Project</a>
-                        <a href="" class="portfolio__link">GitHub</a>
+                        <a href="https://speaktoawaken.nowheremedia.net/" target="_blank" class="portfolio__link">Live
+                            Project</a>
+                        <!-- <a href="https://github.com/mwshepherd/Codex-API" target="_blank" class="portfolio__link">GitHub
+                            Backend</a>
+                        <a href="https://github.com/mwshepherd/codex-client" target="_blank"
+                            class="portfolio__link">GitHub Frontend</a> -->
                     </div>
                     <div class="portfolio__technologies">
                     </div>
+                    <div class="intro__scroll"><a href="#info">&#8592; Scroll</a></div>
                 </div>
-                <section class="portfolio__about">
-                    <div class="portfolio__preview">
-                        Preview image
+                <section class="portfolio__about" id="info">
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__section">
+                        <div class="portfolio__info">
+                            <h3>An interactive series.</h3>
+                            Speak to Awaken is a two part virtual reality series that throws light on indigenous
+                            languages from Nepal and Taiwan that find themselves at different stages on their
+                            reclamation journey. Placing these stories side by side demonstrates how it is micro
+                            communities that are leading the fight to be heard, and offers a glimpse of the invaluable,
+                            unique worldviews that these languages contain.
+                        </div>
+                        <div class="portfolio__img">
+                            <img src="../assets/images/speaktoawaken_landing.jpg" class="portfolio__section-img" />
+                        </div>
+                    </div>
+                    <div class="portfolio__section-tools">
+                        <div class="portfolio__built">
+                            <h3>Built using</h3>
+                            <div class="portfolio__tools">
+                                <span class="portfolio__tool">React</span>
+                                <span class="portfolio__tool">SASS</span>
+                                <span class="portfolio__tool">AWS</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="portfolio__section">
+                        <div class="portfolio__img">
+                            <img src="../assets/images/speaktoawaken_recorder.jpg" class="portfolio__section-img" />
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Voice recorder.</h3>
+                            In each episode of Speak to Awaken, users will learn and speak words in an indigenous
+                            language. This act triggers AI enabled voice based interactions, which carve the user’s path
+                            through the narrative, unlocking storyworlds related to the specific words.
+                        </div>
+                    </div>
+                    <div class="portfolio__divider"></div>
+                    <div class="portfolio__next">
+                        <div class="portfolio__next-project">Next project</div>
+                        <a href="./codex.html" class="portfolio__next-name">Codex</a>
                     </div>
                 </section>
             </div>

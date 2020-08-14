@@ -371,22 +371,22 @@ section {
   transition: all 0.6s;
 }
 .featured-work .preview-window.work-one {
-  background: url(https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+  background: url(../images/kusunda.png);
   background-size: cover;
   background-position: center;
 }
 .featured-work .preview-window.work-two {
+  background: url(https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+  background-size: cover;
+  background-position: center;
+}
+.featured-work .preview-window.work-three {
   background: url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=2133);
   background-size: cover;
   background-position: bottom;
 }
-.featured-work .preview-window.work-three {
-  background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
-  background-size: cover;
-  background-position: bottom;
-}
 .featured-work .preview-window.work-four {
-  background: url(../images/project1.jpg);
+  background: url(https://images.unsplash.com/photo-1560849807-bae5314c9e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
   background-size: cover;
   background-position: bottom;
 }
@@ -753,7 +753,7 @@ section {
   background-size: cover;
   background-position: center;
 }
-.portfolio__bg.speaktheunspoken {
+.portfolio__bg.speaktoawaken {
   background: url("../images/kusunda.png");
   background-size: cover;
   background-position: center;
